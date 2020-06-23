@@ -1,0 +1,123 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/now-ui-kit.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&amp;display=swap" rel="stylesheet">
+    <title>OE-O Launcher</title>
+    <meta name="description" content="Easily manage mods for DRM-free games such as Software Inc or Parkitect, also features support for editors and tools.">
+    <script src="js/oetils.js"></script>
+    <audio id="AudioEasterEgg" src="assets/easterEggSound.wav"></audio>
+</head>
+<body class="topbar-gradient">
+<nav class="navbar navbar-expand-lg bg-transparent">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="assets/menuIcon.svg" width="20px" height="20px" style="max-width: none !important;">
+    </button>
+    <img onclick="easterEgg()" src="assets/logeo.png" width="50" height="50">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 20px !important">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="https://discord.gg/byq9QE6">Discord</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/OE-O">GitHub</a>
+            </li>
+        </ul>
+        <div class="nav-item">
+            <a class="nav-link" href="/modding-team">Modding Team</a>
+        </div>
+        <div class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+        </div>
+        <div class="nav-item">
+            <a class="nav-link" href="/legal">Legal</a>
+        </div>
+    </div>
+</nav>
+<div class="heading">
+    <h1 class="display-5 title">OE-O Launcher</h1>
+    <p class="subtitle">Easily manage mods for DRM-free games such as Software Inc or Parkitect<br>Also features support for editors and tools.</p>
+    <a class="btn btn-primary btn-lg" href="#start_link" target="_blank" role="button">Download Latest Version</a>
+    <a class="btn btn-secondary btn-lg" href="#server_link" target="_blank" role="button">Get started on uploading your mods.</a>
+    <br><br><br><br><br><br>
+</div>
+<div class="features">
+    <div class="title">Features</div>
+    <div class="subtitle">The OE-O Launcher has many features similar to the steam workshop.</div>
+    <div class="cards">
+        <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Auto Updates</h5>
+            <p class="card-text">The launcher checks every half hour for updates on each mod using a simple version to version check system.</p>
+        </div>
+    </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Simple UI</h5>
+                <p class="card-text">The launcher has a simple UI, easy enough for you to look around and install mods for your games.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Wide Range of Support</h5>
+                <p class="card-text">We support a wide range of games, from Parkitect, Minecraft, SimAirport, Software Inc, and much much more.</p>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+</div>
+<div class="statistics">
+    <div class="cards">
+        <div class="card statistic" style="width: 18rem;">
+            <div class="card-body">
+                <p id="registered-users" class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">000
+                </p><p style="font-weight: bold !important;font-size: 20px !important;">Users Registered</p>
+            </div>
+        </div>
+        <div class="card statistic" style="width: 18rem;">
+            <div class="card-body">
+                <p id="mods" class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">000
+                </p><p style="font-weight: bold !important;font-size: 20px !important;">Mods Uploaded</p>
+            </div>
+        </div>
+        <div class="card statistic" style="width: 18rem;">
+            <div class="card-body">
+                <p class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">002
+                </p><p style="font-weight: bold !important;font-size: 20px !important;">Tools Accepted</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page_end">
+    <div class="start">
+        <div class="card">
+            <div class="card-body gs-card">
+                <div class="title">Want to incorporate your tool or editor into the launcher?</div>
+                <div class="subtitle">Why don't you apply today!</div>
+                <br>
+                <a class="btn btn-primary btn-lg" href="#start_link" role="button">Apply</a>
+            </div><br>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="bot-footer">
+            <img src="assets/logeo.png" width="150"><br>
+            Copyright © OE-O Modding | 2020
+        </div><br>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="js/now-ui-kit.min.js"></script>
+
+
+</body></html>
