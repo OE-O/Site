@@ -1,0 +1,14 @@
+name: Preview index.html
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: HTML Preview
+      uses: pavi2410/html-preview-action@v2
+      with:
+        html_file: index.html
