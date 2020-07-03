@@ -1,0 +1,113 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/now-ui-kit.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&amp;display=swap" rel="stylesheet">
+    <title>OE-O Launcher</title>
+    <meta name="description"
+        content="Easily manage mods for DRM-free games such as Software Inc or Parkitect, also features support for editors and tools.">
+    <script src="js/oetils.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <audio id="AudioEasterEgg" src="assets/easterEggSound.wav"></audio>
+    <script>
+        window.onload = () => {
+            var reasonForHere = getUrlParams().get("refer");
+            if(reasonForHere === "1"){
+                return document.getElementById('referalmessage').innerHTML = "You were sent by our discord bot.";
+            }
+            if(reasonForHere === "2"){
+                return document.getElementById('referalmessage').innerHTML = "You are from the OE-O site.";
+            } else {
+                return document.getElementById('referalmessage').innerHTML = "To be honest, i really dont know...";
+            }
+        }
+    </script>
+</head>
+
+<body class="topbar-gradient">
+    
+    <div class="page_end">
+        <div class="container login-container" style="padding-bottom: -95px">
+            <div class="row">
+                
+                <div class="col-md-6 login-form-2">
+                    <h3>Create an Account</h3>
+                    <form>
+                        <div class="form-group">
+                            <input id="e1" style="color: white;" type="text" class="form-control" placeholder="Your Email *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input id="e2" style="color: white;" type="text" class="form-control" placeholder="Repeat Your Email *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input id="un1" style="color: white;" type="text" class="form-control" placeholder="Your Username *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input id="p1" style="color: white;" type="password" class="form-control" placeholder="Your Password *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input id="p2" style="color: white;" type="password" class="form-control" placeholder="Repeat Your Password *" value="" />
+                        </div>
+                        <div style="padding-top: 10px; padding-bottom: 10px;" data-type="image" class="g-recaptcha" data-sitekey="6LcK66kZAAAAAExL0mKVUMrHbn8GZSFGwNZwQx-g"></div>
+                        <div class="form-group">
+                            <p onclick="createAccount()" class="btnSubmit">Create Account</p>
+                        </div>
+                        <div class="form-group">
+                            <p id="signUpRep" style="color: red;"></p>
+                        </div>
+                        <div class="form-group">
+                            <a target="_blank" href="https://oe-o-docs.web.app/licenses/Use-License/" class="ForgetPwd">By signing up, you accept our terms and conditions.</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6 login-form-1">
+                    <h3>Login</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Email *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Your Password *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <p onclick="loginAccount()" class="btnSubmit">Login</p>
+                        </div>
+                        <div class="form-group">
+                            <a href="#" class="ForgetPwd">Forgot your password?</a>
+                        </div>
+                    </form>
+                    <h3>Why are you here?</h3>
+                    <h3><small id="referalmessage"></small></h3>
+                </div>
+            </div>
+            
+        </div>
+        <div class="footer">
+            <div class="bot-footer">
+                <img src="assets/logeo.png" width="150"><br>
+                Copyright © OE-O Modding | 2020
+            </div><br>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="js/now-ui-kit.min.js"></script>
+
+
+</body>
+
+</html>

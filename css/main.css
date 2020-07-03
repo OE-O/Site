@@ -224,6 +224,68 @@ color: rgba(255, 255, 255, 0.46) !important
     text-align: center !important;
     color: #a2a8bd !important
 }
+.login-container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.login-form-1{
+    padding: 5%;
+    background-color: #0C585B;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-1 h3{
+    text-align: center;
+    color: white;
+}
+.login-form-2{
+    padding: 5%;
+    background: #2C2F33;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-2 h3{
+    text-align: center;
+    color: #fff;
+}
+.form-group input[type="password"]:focus {
+    background-color: black;
+}
+.form-group input[type="text"]:focus {
+    background-color: black;
+}
+.login-container form{
+    padding: 10%;
+}
+.btnSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+.login-form-1 .btnSubmit{
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    background-color: #2C2F33;
+}
+.login-form-2 .btnSubmit{
+    font-weight: 600;
+    color: #0062cc;
+    text-align: center;
+    background-color: #fff;
+}
+.login-form-2 .ForgetPwd{
+    color: #fff;
+    font-weight: 600;
+}
+.login-form-1 .ForgetPwd{
+    color: #fff;
+    font-weight: 600;
+    
+    text-decoration: none;
+}
+
 @-webkit-keyframes gradientBG {
 	0% {
 		background-position: 0% 50%;
