@@ -18,6 +18,11 @@
     <meta property="og:image" content="img/Logo.png"/>
     <meta name="description" content="We take legal seriously.">
     <script src="/js/oetils.js"></script>
+    <script>
+        window.onload = () => {
+            document.getElementById('legal').style = `width: ${screen.width - 150}px`
+        }
+    </script>
 </head>
 
 <body>
@@ -56,7 +61,7 @@
             <ul class="subtitle">OE-O Member TOS - <a href="https://oe-o.tk/legal-docs/website-TOS.txt">https://oe-o.tk/legal/member-TOS.txt</a></ul>
         </li>
     </p>
-    <div class="subtitle card-body" style="width: 90rem">
+    <div class="subtitle card-body" id="legal">
         <h2>Website Terms and Conditions of Use</h2>
         <hr class="under-header">
         <h3>1. Terms</h3>
