@@ -13,6 +13,9 @@ app.use(cors());
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/views/index.html")
 });
+app.get("/__/sitemap.xml", (req,res) => {
+    res.sendFile(__dirname + "/views/sitemap.xml");
+})
 app.get("/legal", (req, res) => {
     res.sendFile(__dirname + "/views/legal.html")
 });
