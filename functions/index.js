@@ -43,8 +43,8 @@ app.post("/api/multiplayer/issues/create", (req, res) => {
     GitHub.issues.create({
         owner: "cal3432",
         repo: "software-inc-multiplayer",
-        title: `${body.error.code}: ${body.error.message}`,
-        body: `${body.error.code}: ${body.error.message}\n\`\`\`${body.error.stringed}\`\`\``,
+        title: `${body.error.Code}: ${body.error.Message}`,
+        body: `${body.error.Code}: ${body.error.Message}\n\`\`\`${body.error.Stringed}\`\`\``,
         labels: ["In-game Error", "OE-O Bot"]
     });
     var jresponse = JSON.stringify({
