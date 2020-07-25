@@ -1,0 +1,16 @@
+
+{
+    "name": "Software Inc+",
+    "game": "Software Inc",
+    "shortDesc": "A mega add-on pack for Software Inc",
+    "longDesc": "This mod improves the basic office software that comes with Software Inc, it fixes some bugs and adds a few nice additions to it.",
+    "imageFile": "thumbnail.jpg",
+    "id": "420",
+    "official": true,
+    "steam": {
+        "hasSteam": true,
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2121637271"
+    },
+    "allowSiteDownload": true,
+    "comingSoon": false
+}

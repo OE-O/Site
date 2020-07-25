@@ -143,7 +143,12 @@ code {
     border-radius: 5px !important;
     box-shadow: none !important;
 }
-
+::-webkit-input-placeholder {
+    text-align: center;
+  }
+  input {
+  text-align: center;
+}
 .card-title {
     font-size: 28px !important;
     font-weight: 600 !important;

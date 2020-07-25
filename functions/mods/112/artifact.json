@@ -1,0 +1,15 @@
+{
+    "name": "OE-O | Operating System Overhaul",
+    "game": "Software Inc",
+    "shortDesc": "This mod makes the base game Operating System better.",
+    "longDesc": "The Operating System Overhaul mod <em>overhauls</em> (Who expected that!) the base game Operating System software type. It fixes a good few bugs and makes it a tad bit more balanced.",
+    "imageFile": "thumbnail.png",
+    "id": "112",
+    "official": true,
+    "steam": {
+        "hasSteam": true,
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2122581319"
+    },
+    "allowSiteDownload": true,
+    "comingSoon": false
+}

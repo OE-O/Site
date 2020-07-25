@@ -1,0 +1,15 @@
+{
+    "name": "OE-O | Social Media Mod",
+    "game": "Software Inc",
+    "shortDesc": "Brainwash your users in this Software Inc Mod",
+    "longDesc": "This mod adds Social Media to Software Inc, alongside with lawsuits if you mess up, double win!",
+    "imageFile": "preview.png",
+    "id": "002",
+    "official": true,
+    "steam": {
+        "hasSteam": true,
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2112453915"
+    },
+    "allowSiteDownload": true,
+    "comingSoon": false
+}

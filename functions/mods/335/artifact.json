@@ -1,0 +1,15 @@
+{
+    "name": "NAL's PA Enhancements",
+    "game": "SimAirport",
+    "shortDesc": "A mod that adds more speakers and amplifiers to the game.",
+    "longDesc": "PA Enhancements mod is a mod that adds new PA Amplifiers and PA Speakers.",
+    "imageFile": "preview.png",
+    "id": "335",
+    "official": true,
+    "steam": {
+        "hasSteam": true,
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1917743808"
+    },
+    "allowSiteDownload": false,
+    "comingSoon": false
+}
