@@ -1,12 +1,39 @@
 Team Member Terms Of Use.
 
-1. Terms
+1. Term
+This Agreement shall begin when the Member joins and continue until the Member leaves or OE-O stops operating.
+	1. OE-O may terminate this Agreement for any reason at any time.
+	2. The Member may leave OE-O at any time.
 
-By being part of our team, you should respect the following rules:
+2. Services
+The Member agrees that it shall provide its expertise to OE-O for all things pertaining to mods.
 
-    - Staying calm during arguments and or other manners.
-    - Do not steal code from other team members or other mods without OE-O or the mod creator/developers permissions.
-    - Do not harrass or discriminate other team members.
-    - Do not send OE-O Source Code without permission to non-team members.
+3. Monetisation
+Members shall put a link to donate to OE-O in the descriptions of their mods. Any donations received shall be reinvested and not transferred from OE-O to its members.
 
-Breakage of these rules will follow in a warning, ban or removal from OE-O indefinitely.
+4. Intellectual Property Rights
+OE-O acknowledge and agree that Members will hold all intellectual property rights to mods they have created, including, but not limited to, copyright and trademark rights. OE-O agrees not to claim any such ownership in such intellectual property at any time prior to or after the completion of mods. Members reserve the right to withdraw their creations from the OE-O mod collection however in doing so the creation will lose any advertisement from OE-O. Members should not claim ownership or remove other content without written permission from the owner.
+
+5. Confidentiality
+OE-O shall not disclose to any third party any details regarding the Member unless outlined below.
+	1. Discord username
+	2. Steam account name
+	3. GitHub username
+	4. Past and current mods
+	5. Other already publicly available information
+	
+6. Noncompetition
+During the term of this Agreement, the Member shall not engage, directly or indirectly, as a Member or in any other capacity, in any competition with OE-O, personally or through another modding team.
+
+7. Nonsolicitation of Members
+During the term of this Agreement, the Member will not, directly or indirectly attempt to recruit, solicit, or induce, any of OE-O’s Members.
+
+8. Indemnification
+OE-O agrees to indemnify, defend, and protect the Member from and against all lawsuits and costs of every kind pertaining to the Member’s Mods including reasonable legal fees due to any act or failure to act by the Member.
+
+9. No Modification Unless in Writing
+No modification of this Agreement shall be valid unless in writing and agreed upon by both Parties.
+
+10. Applicable Law
+This Agreement and the interpretation of its terms shall be governed by and construed in accordance with the laws of the United Kingdom and subject to the exclusive jurisdiction of the county and crown courts located in Great Britain. Find relevant information at http://www.legislation.gov.uk/
+© 2020 GitHub, Inc.
