@@ -6,12 +6,15 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const app = express();
 const fs = require('fs');
-const stringyi = require('string-similarity');
 app.use(express.static('public'));
 app.use("/mods-raw", express.static('mods'));
 app.use(bodyParser.json());
 app.use(morgan('dev'));
 app.use(cors());
+app.use(busboy({
+    highWaterMark: 2 * 1024 * 1024,
+    
+}))
 //#region core# 
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/views/index.html")
@@ -29,6 +32,12 @@ app.get("/apply", (req, res) => {
     res.sendFile(__dirname + "/views/apply.html")
 })
 //#endregion 
+
+//#region oeo cmd tool
+app.get("/api/cli/version", (res, req) => {
+    res.send({status: 200, version: "0.0.0"});
+});
+//#endregion
 
 //#region Mods 
 const mods = [];
@@ -63,26 +72,26 @@ exfolder.dirs('./mods', (err, result) => {
             res.sendFile(mod.zipPath);
         });
         console.log("Registered: " + mod.info.name)
-    });
-    app.get("/api/mods/search", (req, res) => {
-        var query = req.query.query;
-        var close = [];
-        mods.forEach(mod => {
-            var similarity = stringyi.compareTwoStrings(query, mod.name);
-            if(similarity >= 0.85) close.push(mod);
-        });
-        return res.send(close);
-    });
-    
+    });    
     app.get("/api/mods", (req, res) => {
         res.send(mods);
-    })
+    });
+    app.get("/api/mods/checkID", (req, res) => {
+        var anyMatches = false;
+        mods.forEach(mod => {
+            if(req.query.id == mod.info.id || anyMatches) {
+                anyMatches = true;
+                return;
+            }
+            return;
+        });
+        res.send({matches: anyMatches});
+    });
     app.use(function(req, res) {
         res.status(400);
         res.sendFile(__dirname + "/views/404.html");
     });
 });
-
 //#endregion
 
 if (process.argv.includes("--debug=true")) {
@@ -95,9 +104,6 @@ const firebase_export = functions.https.onRequest((request, response) => {
     }
     return app(request, response)
 });
-
-
-
 module.exports = {
     firebase_export
 }
