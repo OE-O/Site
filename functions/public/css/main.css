@@ -428,11 +428,12 @@ div#main-content {
 .hb-close-wrapper {
     display: table-cell;
     width: 1.6em;
+    position: relative;
 }
+
 .hb-close-wrapper .icon-close {
     font-size: 14px;
-    top: 15px;
-    right: 25px;
+    top: 50%;
     width: 15px;
     height: 15px;
     opacity: .3;
@@ -443,4 +444,5 @@ div#main-content {
     line-height: 15px;
     z-index: 1000;
     text-decoration: none;
+    transform: translateY(-50%);
 }
