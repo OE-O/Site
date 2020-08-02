@@ -11,10 +11,6 @@ app.use("/mods-raw", express.static('mods'));
 app.use(bodyParser.json());
 app.use(morgan('dev'));
 app.use(cors());
-app.use(busboy({
-    highWaterMark: 2 * 1024 * 1024,
-    
-}))
 //#region core# 
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/views/index.html")
@@ -49,14 +45,41 @@ exfolder.dirs('./mods', (err, result) => {
                 info: prop,
                 zipPath: res + "/artifact.zip",
                 imgPath: res + "/" + prop.imageFile,
-                downloadURL: "https://oe-o.tk/api/mods/" + prop.id,
+                downloadURL: "https://oe-o.tk/d/" + prop.id + "-latest",
             }
             mods.push(mod);
         });
     });
     mods.forEach(mod => {
         app.get("/mods/" + mod.info.id, (req, res) => {
-            res.sendFile(__dirname + "/views/mod.html");
+            var html = fs.readFileSync(__dirname + "/views/mod.html", 'utf-8');
+            html = html.replace("%og:pageTitle%", mod.name);
+            html = html.replace("%og:pageURL%", "https://oe-o.tk/mods/" + mod.info.id);
+            html = html.replace("%og:pageImg%", "https://oe-o.tk/i/" + mod.info.id);
+            html = html.replace("%modImgange%", "https://oe-o.tk/i/" + mod.info.id);
+            html = html.replace("%og:pageshort%", mod.info.shortDesc);
+            html = html.replace("%modTitle%", mod.info.name);
+            html = html.replace("%modShort%", mod.info.shortDesc);
+            html = html.replace("%isOfficial%", (mod.info.official) ? "Official OE-O Mod" : " ");
+            html = html.replace("%modname%", mod.info.name);
+            html = html.replace("%modgame%", mod.info.game);
+            html = html.replace("%moddesc%", mod.info.longDesc);
+            if(mod.info.comingSoon) {
+                html = html.replace(`<a class="btn btn-primary btn-lg" href="%downloadURL%" target="_blank" role="button" id="downloadAsZip">Download as ZIP</a> <!--steam://openurl/--><a class="btn btn-secondary btn-lg" role="button" href="%steamURL%" id="openInSteam">Open in Steam</a><a class="btn btn-secondary btn-lg" role="button" href="%workshopID%" id="openInSteam">Workshop Page</a>`, `<a class="btn btn-secondary btn-lg" role="button">Coming Soon</a>`);
+                return res.send(html);
+            }
+            if(!mod.info.allowSiteDownload) {
+                html = html.replace(`<a class="btn btn-primary btn-lg" href="%downloadURL%" target="_blank" role="button" id="downloadAsZip">Download as ZIP</a>`, " ");
+            } else {
+                html = html.replace("%downloadURL%", mod.info.downloadURL);
+            }
+            if(!mod.info.steam.hasSteam) {
+                html = html.replace(`<a class="btn btn-secondary btn-lg" role="button" href="%steamURL%" id="openInSteam">Open in Steam</a><a class="btn btn-secondary btn-lg" role="button" href="%workshopID%" id="openInSteam">Workshop Page</a>`, "");
+            } else {
+                html = html.replace("%steamURL%", `steam://openurl/${mod.info.steam.url}`);
+                html = html.replace("%workshopID%", mod.info.steam.url);
+            }
+            res.send(html);
         });
         app.get("/api/mods/" + mod.info.id, (req, res) => {
             res.send(mod.info);

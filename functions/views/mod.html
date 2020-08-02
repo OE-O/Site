@@ -15,17 +15,21 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&amp;display=swap" rel="stylesheet">
     <title>OE-O</title>
     <link rel="icon" href="https://oe-o.tk/img/Logo.png">
-    <meta property="og:title" id="pageTitle" content="OE-O">
-    <meta property="og:url" id="pageURL" content="https://www.oe-o.tk" />
-    <meta property="og:image" id="pageImg" content="" />
-    <meta name="description" id="pageShort" content="">
+    <meta property="og:title" id="pageTitle" content="%og:pageTitle%">
+    <meta property="og:url" id="pageURL" content="%og:pageURL%" />
+    <meta property="og:image" id="pageImg" content="%og:pageImg%" />
+    <meta name="description" id="pageShort" content="%og:pageshort%">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152743784-3"></script>
     <script data-ad-client="ca-pub-4423104218850474" async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script src="/js/oetils.js"></script>
     <script src="/js/gtag.js"></script>
-    <script src="/js/modFiller.js"></script>
+    <script>
+        window.onload = () => {
+            document.getElementById('previewImg').width = screen.width / 3
+        }
+    </script>
     <audio id="AudioEasterEgg" src="/assets/easterEggSound.wav"></audio>
 </head>
 
@@ -81,28 +85,24 @@
             </div>
         </nav>
         <div class="heading">
-            <h1 class="display-5 title" id="modtitle"></h1>
-            <p class="subtitle" id="shortdesc"></p>
-            <small id="official"></small>
+            <h1 class="display-5 title" id="modtitle">%modTitle%</h1>
+            <p class="subtitle" id="shortdesc">%modShort%</p>
+            <small id="official">%isOfficial%</small>
             <br><br><br><br>
         </div>
         <div class="features">
             <div class="card">
-                <div class="image-container" id="previewImg">
-
+                <div class="image-container">
+                    <img src="%modImgange%" id="previewImg" style="margin-top: 1rem; margin-bottom: 1rem; color: white; border: 2px solid #AD91FF; border-radius: 5px" alt="We couldn't load this image, sorry..." width="0" height="auto">
                 </div>
                 <div class="card-body" style="margin-top: -4rem;">
                     <hr style="border-width: 5px !important; border-radius: 5px;
-                    box-shadow: none !important; border-color: #AD91FF">            
-                    <h5 class="card-title" id="modname"></h5>
-                    <p class="card-text"><small id="game"></small></p>
-                    <p class="card-text" id="description"></p>
+                    box-shadow: none !important; border-color: #AD91FF">
+                    <h5 class="card-title" id="modname">%modname%</h5>
+                    <p class="card-text"><small id="game">%modgame%</small></p>
+                    <p class="card-text" id="description">%moddesc%</p>
                     <br>
-                    <a class="btn btn-primary btn-lg" href="" target="_blank" role="button" id="downloadAsZip">Download
-                        as ZIP</a>
-                    <!--steam://openurl/-->
-                    <a class="btn btn-secondary btn-lg" role="button" id="openInSteam">Open in
-                        Steam</a>
+                    <a class="btn btn-primary btn-lg" href="%downloadURL%" target="_blank" role="button" id="downloadAsZip">Download as ZIP</a> <!--steam://openurl/--><a class="btn btn-secondary btn-lg" role="button" href="%steamURL%" id="openInSteam">Open in Steam</a> <a class="btn btn-secondary btn-lg" role="button" href="%workshopID%" id="openInSteam">Workshop Page</a>
                 </div>
             </div>
         </div>
