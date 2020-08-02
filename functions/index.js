@@ -71,7 +71,7 @@ exfolder.dirs('./mods', (err, result) => {
             if(!mod.info.allowSiteDownload) {
                 html = html.replace(`<a class="btn btn-primary btn-lg" href="%downloadURL%" target="_blank" role="button" id="downloadAsZip">Download as ZIP</a>`, " ");
             } else {
-                html = html.replace("%downloadURL%", mod.info.downloadURL);
+                html = html.replace("%downloadURL%", mod.downloadURL);
             }
             if(!mod.info.steam.hasSteam) {
                 html = html.replace(`<a class="btn btn-secondary btn-lg" role="button" href="%steamURL%" id="openInSteam">Open in Steam</a><a class="btn btn-secondary btn-lg" role="button" href="%workshopID%" id="openInSteam">Workshop Page</a>`, "");
