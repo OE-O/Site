@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -15,41 +16,41 @@
     <title>OE-O - Legal</title>
     <link rel="icon" href="https://oe-o.tk/img/Logo.png">
     <meta property="o:title" content="OE-O - Legal">
-    <meta property="og:url" content="https://www.oe-o.tk/legal"/>
-    <meta property="og:image" content="https://oe-o.tk/img/Logo.png"/>
+    <meta property="og:url" content="https://www.oe-o.tk/legal" />
+    <meta property="og:image" content="https://oe-o.tk/img/Logo.png" />
     <meta name="description" content="We take legal seriously.">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152743784-3"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'UA-152743784-3');
+        gtag('config', 'UA-152743784-3');
     </script>
 
     <script src="/js/oetils.js"></script>
-    <script>
+    <audio id="AudioEasterEgg" src="assets/easterEggSound.wav"></audio>
+    <!--<script>
         window.onload = () => {
             document.getElementById('legal').style = `width: ${screen.width - 150}px`
         }
-    </script>
+    </script>-->
 </head>
 
-<body>
+<body class="topbar-gradient">
     <nav class="navbar navbar-expand-lg bg-transparent">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <img src="/assets/menuIcon.svg" width="20px" height="20px" style="max-width: none !important;">
+            <img src="assets/menuIcon.svg" width="20px" height="20px" style="max-width: none !important;">
         </button>
-        <img onclick="easterEgg()" src="/assets/logeo.png" width="50" height="50">
+        <img onclick="easterEgg()" src="assets/logeo.png" width="50" height="50">
         <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 20px !important">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="/">Home</a>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link" href="https://discord.gg/byq9QE6">Discord</a>
                 </li>
@@ -57,38 +58,47 @@
                     <a class="nav-link" href="https://github.com/OE-O">GitHub</a>
                 </li>
             </ul>
-            <div class="nav-item">
-                <a class="nav-link"
-                    href="/apply">Apply</a>
-            </div>
-            <div class="nav-item">
-                <a class="nav-link" href="/legal">Legal</a>
-            </div>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://oe-o.tk/apply">Apply</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/legal">Legal</a>
+                </li>
+            </ul>
         </div>
     </nav>
     <p class="subtitle card-body"> You can find all the legal files here:
         <li>
-            <ul class="subtitle">OE-O License - <a href="https://oe-o.tk/legal-docs/oe-o-license.txt">https://oe-o.tk/legal/oe-o-license.txt</a></ul>
-            <ul class="subtitle">OE-O Website TOS - <a href="https://oe-o.tk/legal-docs/website-TOS.txt">https://oe-o.tk/legal/website-TOS.txt</a></ul>
-            <ul class="subtitle">OE-O Member TOS - <a href="https://oe-o.tk/legal-docs/member-TOS.txt">https://oe-o.tk/legal/member-TOS.txt</a></ul>
+            <ul class="subtitle">OE-O License - <a
+                    href="https://oe-o.tk/legal-docs/oe-o-license.txt">https://oe-o.tk/legal/oe-o-license.txt</a>
+            </ul>
+            <ul class="subtitle">OE-O Website TOS - <a
+                    href="https://oe-o.tk/legal-docs/website-TOS.txt">https://oe-o.tk/legal/website-TOS.txt</a></ul>
+            <ul class="subtitle">OE-O Member TOS - <a
+                    href="https://oe-o.tk/legal-docs/member-TOS.txt">https://oe-o.tk/legal/member-TOS.txt</a></ul>
         </li>
     </p>
-    <div class="subtitle card-body" id="legal">
+    <div class="subtitle card-body">
         <h2>Website Terms and Conditions of Use</h2>
         <hr class="under-header">
         <h3>1. Terms</h3>
 
         <p>By accessing this Website, accessible from <a href="https://oe-o.tk/">https://oe-o.tk/</a>, you
             are
-            agreeing to be bound by these Website Terms and Conditions of Use and agree that you are responsible for the
-            agreement with any applicable local laws. If you disagree with any of these terms, you are prohibited from
-            accessing this site. The materials contained in this Website are protected by copyright and trade mark law.
+            agreeing to be bound by these Website Terms and Conditions of Use and agree that you are responsible for
+            the
+            agreement with any applicable local laws. If you disagree with any of these terms, you are prohibited
+            from
+            accessing this site. The materials contained in this Website are protected by copyright and trade mark
+            law.
         </p>
 
         <h3>2. Use License</h3>
 
         <p>Permission is granted to temporarily download one copy of the materials on OE-O's Website for personal,
-            non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under
+            non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and
+            under
             this
             license you may not:</p>
 
@@ -100,14 +110,17 @@
             <li>transferring the materials to another person or "mirror" the materials on any other server.</li>
         </ul>
 
-        <p>This will let OE-O to terminate upon violations of any of these restrictions. Upon termination, your viewing
-            right will also be terminated and you should destroy any downloaded materials in your possession whether it
+        <p>This will let OE-O to terminate upon violations of any of these restrictions. Upon termination, your
+            viewing
+            right will also be terminated and you should destroy any downloaded materials in your possession whether
+            it
             is
             printed or electronic format.</p>
 
         <h3>3. Disclaimer</h3>
 
-        <p>All the materials on OE-O’s Website are provided "as is". OE-O makes no warranties, may it be expressed or
+        <p>All the materials on OE-O’s Website are provided "as is". OE-O makes no warranties, may it be expressed
+            or
             implied, therefore negates all other warranties. Furthermore, OE-O does not make any representations
             concerning
             the accuracy or reliability of the use of the materials on its Website or otherwise relating to such
@@ -116,41 +129,52 @@
 
         <h3>4. Limitations</h3>
 
-        <p>OE-O or its suppliers will not be hold accountable for any damages that will arise with the use or inability
+        <p>OE-O or its suppliers will not be hold accountable for any damages that will arise with the use or
+            inability
             to
-            use the materials on OE-O’s Website, even if OE-O or an authorize representative of this Website has been
-            notified, orally or written, of the possibility of such damage. Some jurisdiction does not allow limitations
+            use the materials on OE-O’s Website, even if OE-O or an authorize representative of this Website has
+            been
+            notified, orally or written, of the possibility of such damage. Some jurisdiction does not allow
+            limitations
             on
-            implied warranties or limitations of liability for incidental damages, these limitations may not apply to
+            implied warranties or limitations of liability for incidental damages, these limitations may not apply
+            to
             you.
         </p>
 
         <h3>5. Revisions and Errata</h3>
 
-        <p>The materials appearing on OE-O’s Website may include technical, typographical, or photographic errors. OE-O
+        <p>The materials appearing on OE-O’s Website may include technical, typographical, or photographic errors.
+            OE-O
             will
-            not promise that any of the materials in this Website are accurate, complete, or current. OE-O may change
+            not promise that any of the materials in this Website are accurate, complete, or current. OE-O may
+            change
             the
-            materials contained on its Website at any time without notice. OE-O does not make any commitment to update
+            materials contained on its Website at any time without notice. OE-O does not make any commitment to
+            update
             the
             materials.</p>
 
         <h3>6. Links</h3>
 
-        <p>OE-O has not reviewed all of the sites linked to its Website and is not responsible for the contents of any
+        <p>OE-O has not reviewed all of the sites linked to its Website and is not responsible for the contents of
+            any
             such
-            linked site. The presence of any link does not imply endorsement by OE-O of the site. The use of any linked
+            linked site. The presence of any link does not imply endorsement by OE-O of the site. The use of any
+            linked
             website is at the user’s own risk.</p>
 
         <h3>7. Site Terms of Use Modifications</h3>
 
-        <p>OE-O may revise these Terms of Use for its Website at any time without prior notice. By using this Website,
+        <p>OE-O may revise these Terms of Use for its Website at any time without prior notice. By using this
+            Website,
             you
             are agreeing to be bound by the current version of these Terms and Conditions of Use.</p>
 
         <h3>8. Governing Law</h3>
 
-        <p>Any claim related to OE-O's Website shall be governed by the laws of gb without regards to its conflict of
+        <p>Any claim related to OE-O's Website shall be governed by the laws of gb without regards to its conflict
+            of
             law
             provisions.</p>
 
