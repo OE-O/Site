@@ -1,0 +1,77 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/",
+        "destination": "/pages/index.html"
+      },
+      {
+        "source": "/apply",
+        "destination": "/pages/apply.html"
+      },
+      {
+        "source": "/legal",
+        "destination": "/pages/legal/index.html"
+      },
+      {
+        "source": "/legal/privacy",
+        "destination": "/pages/legal/privacy.html"
+      },
+      {
+        "source": "/legal/ToS",
+        "destination": "/pages/legal/tos.html"
+      },
+      {
+        "source": "/legal/members",
+        "destination": "/pages/legal/members.html"
+      },
+      {
+        "source": "/legal/license",
+        "destination": "/pages/legal/license.html"
+      },
+      {
+        "source": "/mods",
+        "destination": "/pages/mods/index.html"
+      },
+      {
+        "source": "/mods/**",
+        "destination": "/pages/mods/mod-page.html"
+      },
+      {
+        "source": "/**",
+        "destination": "/pages/404.html"
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/discord",
+        "destination": "https://discord.gg/yDCsygY",
+        "type": 301
+      },
+      {
+        "source": "/github",
+        "destination": "https://github.com/OE-O",
+        "type": 301
+      },
+      {
+        "source": "/trello",
+        "destination": "https://trello.com/b/IP5aA43e/oe-o",
+        "type": 301
+      }
+    ],
+    "i18n": {
+      "root": "/localisation"
+    }
+  },
+  "emulators": {
+    "hosting": {
+      "port": 5000
+    }
+  }
+}
