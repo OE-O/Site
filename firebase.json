@@ -44,6 +44,10 @@
         "destination": "/pages/mods/mod-page.html"
       },
       {
+        "source": "/api/**",
+        "function": "API"
+      },
+      {
         "source": "/**",
         "destination": "/pages/404.html"
       }
