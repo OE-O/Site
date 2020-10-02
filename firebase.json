@@ -1,9 +1,0 @@
-{
-  "hosting": {
-    "public": "./functions/public",
-    "rewrites": [{
-      "source": "**",
-      "function": "firebase_export"
-    }]
-  }
-}
