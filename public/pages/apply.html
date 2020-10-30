@@ -2,23 +2,25 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>OE-O | Applications</title>
-  <link href="../assets/Logo-icon.png" rel="icon" type="image/x-icon">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OE-O | Applications</title>
+	<link href="../assets/Logo-icon.png" rel="icon" type="image/x-icon">
 
-  <script src="/__/firebase/7.20.0/firebase-app.js"></script>
-  <script src="/__/firebase/7.20.0/firebase-analytics.js"></script>
-  <script src="/__/firebase/init.js"></script>
+	<script src="/__/firebase/7.20.0/firebase-app.js"></script>
+	<script src="/__/firebase/7.20.0/firebase-analytics.js"></script>
+	<script src="/__/firebase/init.js"></script>
 
-  <link rel="stylesheet" href="../../css/main.css">
-  <link rel="stylesheet" href="../../css/apply.css">
-  <!--<script type="text/javascript" src="../js/lang.js"></script>-->
-  <!--<script type="text/javascript" src="../js/mobile.js"></script>-->
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/apply.css">
+	
+	<!--<script type="text/javascript" src="../js/lang.js"></script>-->
+	<!--<script type="text/javascript" src="../js/mobile.js"></script>-->
+	<script type="text/javascript" src="../js/analytics.js"></script>
 </head>
 
-<body>
-  <!--<header>
+<body onload="loaded()">
+	<!--<header>
     <img class="logo" src="../assets/Logo.png" width="50" height="50">
     <nav>
       <ul class="nav-links mr-auto">
@@ -50,15 +52,18 @@
       <a href="/legal">Legal</a>
     </div>
   </menu>-->
-  <main>
-    <section class="top">
-      <div class="top-content">
-        <h1 class="title">Member Application</h1>
-        <p class="subtitle">We're sorry, applications are closed at the moment.</p>
-        <a class="btn-primary" href="/discord" target="_blank" role="button">Join the discord</a>
-      </div>
-    </section>
-  </main>
+	<main>
+		<section class="top">
+			<div class="top-content">
+				<h1 class="title">Member Application</h1>
+				<p class="subtitle">We're sorry, you can't apply via the website at the moment.</p>
+				<a class="btn-primary" href="/discord" target="_blank" role="button">Join the discord</a>
+				<a class="btn-primary" role="button" target="_blank"
+					href="mailto:applications@oe-o.dev?subject=Modding Team Application&body=For now, we only need: %0d%0aFull Name: %0d%0aAge: %0d%0a%0d%0aYou will be contacted by an OE-O member soon.">
+					Apply via email </a>
+			</div>
+		</section>
+	</main>
 </body>
 
 </html>

@@ -2,70 +2,71 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>OE-O | 404</title>
-    <link href="../assets/Logo-icon.png" rel="icon" type="image/x-icon">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OE-O | 404</title>
+	<link href="../assets/Logo-icon.png" rel="icon" type="image/x-icon">
 
-    <script src="/__/firebase/7.20.0/firebase-app.js"></script>
-    <script src="/__/firebase/7.20.0/firebase-analytics.js"></script>
-    <script src="/__/firebase/init.js"></script>
+	<script src="/__/firebase/7.20.0/firebase-app.js"></script>
+	<script src="/__/firebase/7.20.0/firebase-analytics.js"></script>
+	<script src="/__/firebase/init.js"></script>
 
-    <link rel="stylesheet" href="../../css/main.css">
-    <link rel="stylesheet" href="../../css/404.css">
+	<link rel="stylesheet" href="../../css/main.css">
+	<link rel="stylesheet" href="../../css/404.css">
 
-    <script type="text/javascript" src="../../js/mobile.js"></script>
-    <script type="text/javascript" src="../../js/404.js"></script>
-    <script type="text/javascript" src="../js/lang.js"></script>
+	<script type="text/javascript" src="../../js/mobile.js"></script>
+	<script type="text/javascript" src="../../js/404.js"></script>
+	<script type="text/javascript" src="../../js/lang.js"></script>
+	<script type="text/javascript" src="../../js/analytics.js"></script>
 </head>
 
-<body>
-    <header>
-        <img class="logo" src="../assets/Logo.png" width="50" height="50">
-        <nav>
-            <ul class="nav-links mr-auto">
-                <li><a href="/">Koti</a></li>
-                <li><a href="/discord" target="_blank">Discord</a></li>
-                <li><a href="/github" target="_blank">GitHub</a></li>
-            </ul>
-            <ul class="nav-links ml-auto">
-                <li><a href="/apply">Hae</a></li>
-                <li><a href="/legal">Legal</a></li>
-            </ul>
-        </nav>
-        <button class="navButton" onclick="openNav()"><img src="../assets/menu.svg" width="40" height="40"
-                class="navIcon"></button>
-        <div class="dropdown">
-            <button class="langButton" onclick="openLang()"><img src="../assets/language.svg" class="langIcon"></button>
-            <div class="dropdown-content" id="dropdown" style="display: none;">
-                <a onclick="switchLang('en')">English</a>
-                <a onclick="switchLang('fi')">Suomi</a>
-            </div>
-        </div>
-    </header>
-    <menu id="mobile-menu" class=overlay>
-        <a class="close" onclick="closeNav()"><img id="menu-exit" src="../assets/cross.svg" alt="exit menu"></a>
-        <div class="overlay-content">
-            <a href="/">Koti</a>
-            <a href="/discord" target="_blank">Discord</a>
-            <a href="/github" target="_blank">GitHub</a>
-            <a href="/apply">Hae</a>
-            <a href="/legal">Legal</a>
-        </div>
-    </menu>
-    </menu>
-    <main>
-        <section class="top">
-            <div class="top-content">
-                <h1 class="title">Voi Ei...</h1>
-                <p class="subtitle">Osuimme esteeseen!</p>
-                <a class="btn-primary" onclick="goBack()" id="back-button" role="button">Palaa</a>
-            </div>
-            <footer>
-                <img class="center" src="../assets/Logo.png" width="150">
-                <p class="copyright">Copyright © OE-O Modding | 2020</p>
-            </footer>
-        </section>
+<body onload="loaded()">
+	<header>
+		<img class="logo" src="../assets/Logo.png" width="50" height="50">
+		<nav>
+			<ul class="nav-links mr-auto">
+				<li><a href="/">Koti</a></li>
+				<li><a href="/discord" target="_blank">Discord</a></li>
+				<li><a href="/github" target="_blank">GitHub</a></li>
+			</ul>
+			<ul class="nav-links ml-auto">
+				<li><a href="/apply">Hae</a></li>
+				<li><a href="/legal">Legal</a></li>
+			</ul>
+		</nav>
+		<button class="navButton" onclick="openNav()"><img src="../assets/menu.svg" width="40" height="40"
+				class="navIcon"></button>
+		<div class="dropdown">
+			<button class="langButton" onclick="openLang()"><img src="../assets/language.svg" class="langIcon"></button>
+			<div class="dropdown-content" id="dropdown" style="display: none;">
+				<a onclick="switchLang('en')">English</a>
+				<a onclick="switchLang('fi')">Suomi</a>
+			</div>
+		</div>
+	</header>
+	<menu id="mobile-menu" class=overlay>
+		<a class="close" onclick="closeNav()"><img id="menu-exit" src="../assets/cross.svg" alt="exit menu"></a>
+		<div class="overlay-content">
+			<a href="/">Koti</a>
+			<a href="/discord" target="_blank">Discord</a>
+			<a href="/github" target="_blank">GitHub</a>
+			<a href="/apply">Hae</a>
+			<a href="/legal">Legal</a>
+		</div>
+	</menu>
+	</menu>
+	<main>
+		<section class="top">
+			<div class="top-content">
+				<h1 class="title">Voi Ei...</h1>
+				<p class="subtitle">Osuimme esteeseen!</p>
+				<a class="btn-primary" onclick="goBack()" id="back-button" role="button">Palaa</a>
+			</div>
+			<footer>
+				<img class="center" src="../assets/Logo.png" width="150">
+				<p class="copyright">Copyright © OE-O Modding | 2020</p>
+			</footer>
+		</section>
 </body>
 
 </html>
