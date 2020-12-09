@@ -1,77 +1,77 @@
 {
-	"hosting": {
-		"public": "public",
-		"ignore": [
-			"firebase.json",
-			"**/.*",
-			"**/node_modules/**"
-		],
-		"rewrites": [
-			{
-				"source": "/",
-				"destination": "/index.html"
-			},
-			{
-				"source": "/apply",
-				"destination": "/apply.html"
-			},
-			{
-				"source": "/legal",
-				"destination": "/legal/index.html"
-			},
-			{
-				"source": "/legal/privacy",
-				"destination": "/legal/privacy.html"
-			},
-			{
-				"source": "/legal/ToS",
-				"destination": "/legal/tos.html"
-			},
-			{
-				"source": "/legal/members",
-				"destination": "/legal/members.html"
-			},
-			{
-				"source": "/legal/license",
-				"destination": "/legal/license.html"
-			},
-			{
-				"source": "/mods",
-				"destination": "/mods/index.html"
-			},
-			{
-				"source": "/mods/**",
-				"destination": "/mods/mod-page.html"
-			},
-			{
-				"source": "/api/**",
-				"function": "API"
-			}
-		],
-		"redirects": [
-			{
-				"source": "/discord",
-				"destination": "https://discord.gg/yDCsygY",
-				"type": 301
-			},
-			{
-				"source": "/github",
-				"destination": "https://github.com/OE-O",
-				"type": 301
-			},
-			{
-				"source": "/trello",
-				"destination": "https://trello.com/b/IP5aA43e/oe-o",
-				"type": 301
-			}
-		],
-		"i18n": {
-			"root": "/localisation"
-		}
-	},
-	"emulators": {
-		"hosting": {
-			"port": 5000
-		}
-	}
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/apply",
+        "destination": "/apply.html"
+      },
+      {
+        "source": "/legal",
+        "destination": "/legal/index.html"
+      },
+      {
+        "source": "/legal/privacy",
+        "destination": "/legal/privacy.html"
+      },
+      {
+        "source": "/legal/ToS",
+        "destination": "/legal/tos.html"
+      },
+      {
+        "source": "/legal/members",
+        "destination": "/legal/members.html"
+      },
+      {
+        "source": "/legal/license",
+        "destination": "/legal/license.html"
+      },
+      {
+        "source": "/mods",
+        "destination": "/mods/index.html"
+      },
+      {
+        "source": "/mods/**",
+        "destination": "/mods/mod-page.html"
+      },
+      {
+        "source": "/api/**",
+        "function": "API"
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/discord",
+        "destination": "https://discord.gg/yDCsygY",
+        "type": 301
+      },
+      {
+        "source": "/github",
+        "destination": "https://github.com/OE-O",
+        "type": 301
+      },
+      {
+        "source": "/trello",
+        "destination": "https://trello.com/b/IP5aA43e/oe-o",
+        "type": 301
+      }
+    ],
+    "i18n": {
+      "root": "/localisation"
+    }
+  },
+  "emulators": {
+    "hosting": {
+      "port": 5000
+    }
+  }
 }
