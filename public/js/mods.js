@@ -91,7 +91,7 @@ function generateCard(mod) {
 	var ModInfo = "";
 	ModInfo += "<card id=\"modCard\">";
 	ModInfo += "<div class=\"card-body\">";
-	ModInfo += "<h5 class=\"card-title\" id=\"modName\">" + mod.data().name + "<\/h1>";
+	ModInfo += "<h2 class=\"card-title\" id=\"modName\">" + mod.data().name + "<\/h2>";
 	ModInfo += "<p class=\"card-text\" id=\"game\"><small>" + mod.data().game + "<\/small><\/p>";
 	ModInfo += "<p class=\"card-text\" id=\"shortDesc\">" + mod.data().shortDesc + "<\/p>";
 	ModInfo += "<a class=\"btn-secondary\" href=\"\/mods\/" + mod.data().id + "\" role=\"button\">view<\/a>";
@@ -117,7 +117,7 @@ function generatePage(mod) {
 	modInfo += "<section class=\"mods\">";
 	modInfo += "<card>";
 	modInfo += "<div class=\"card-body\">";
-	modInfo += "<h5 class=\"card-title\" id=\"modName\"> " + mod.data().name + " <\/h5>";
+	modInfo += "<h2 class=\"card-title\" id=\"modName\"> " + mod.data().name + " <\/h2>";
 	modInfo += "<p class=\"card-text\" id=\"game\"><small> " + mod.data().game + " <\/small><\/p>";
 	modInfo += "<p class=\"card-text\" id=\"longDesc\"> " + mod.data().longDesc + " <\/p>";
 	modInfo += "<br>";
@@ -150,3 +150,5 @@ function generateError() {
 	modError += "<\/section>";
 	return modError
 }
+
+getMod('random')

@@ -1,36 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>OE-O | Home</title>
-	<link href="../assets/Logo - Square.png" rel="icon" type="image/x-icon">
+	<meta name="description" content="We make mods!">
+	<meta name="theme-color" content="#317EFB" />
+	<link href="../assets/Logo-Square.png" rel="icon" type="image/x-icon">
 
 	<meta property="og:title" content="OE-O | Home" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="http://oe-o.tk" />
-	<meta property="og:image" content="http://oe-o.tk/assets/Logo - Square.png" />
+	<meta property="og:url" content="http://oe-o.dev" />
+	<meta property="og:image" content="http://oe-o.dev/assets/Logo-Square.png" />
 	<meta property="og:description" content="We make mods!" />
 
-	<script src="/__/firebase/7.21.0/firebase-app.js"></script>
-	<script src="/__/firebase/7.21.0/firebase-analytics.js"></script>
-	<script src="/__/firebase/7.21.0/firebase-firestore.js"></script>
-	<script src="/__/firebase/init.js"></script>
+	<script defer src="/__/firebase/7.21.0/firebase-app.js"></script>
+	<script defer src="/__/firebase/7.21.0/firebase-analytics.js"></script>
+	<script defer src="/__/firebase/7.21.0/firebase-firestore.js"></script>
+	<script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
-	<link rel="stylesheet" href="../css/main.css">
+	<link defer rel="stylesheet" href="../css/main.css">
 
-	<script type="text/javascript" src="../js/mobile.js"></script>
-	<script type="text/javascript" src="../js/top.js"></script>
-	<script type="text/javascript" src="../js/lang.js"></script>
-	<script type="text/javascript" src="../js/mods.js"></script>
-	<script type="text/javascript" src="../js/analytics.js"></script>
-	<script defer type="text/javascript">getMod('random')</script>
+	<script defer type="text/javascript" src="../js/mobile.js"></script>
+	<script defer type="text/javascript" src="../js/top.js"></script>
+	<script defer type="text/javascript" src="../js/lang.js"></script>
+	<script defer type="text/javascript" src="../js/mods.js"></script>
+	<script defer type="text/javascript" src="../js/analytics.js"></script>
 </head>
 
 <body onload="loaded()">
 	<header>
-		<img class="logo" src="../assets/Logo - Square Clear.png" width="50" height="50">
+		<img class="logo" src="../assets/Logo-Square_Clear.svg" width="50" height="50" alt="logo">
 		<nav>
 			<ul class="nav-links mr-auto">
 				<li><a href="/">Home</a></li>
@@ -42,10 +43,10 @@
 				<li><a href="/legal">Legal</a></li>
 			</ul>
 		</nav>
-		<button class="navButton" onclick="openNav()"><img src="../assets/menu.svg" width="40" height="40"
-				class="navIcon"></button>
+		<button class="navButton" onclick="openNav()" aria-label="Navigation Button"><img src="../assets/menu.svg"
+				width="40" height="40" class="navIcon" alt="Navigation Button"></button>
 		<div class="dropdown">
-			<button class="langButton" onclick="openLang()"><img src="../assets/language.svg" class="langIcon"></button>
+			<button class="langButton" onclick="openLang()" aria-label="Languge Button" />
 			<div class="dropdown-content" id="dropdown" style="display: none;">
 				<a onclick="switchLang('en')">English</a>
 				<a onclick="switchLang('fi')">Suomi</a>
@@ -87,7 +88,7 @@
 				<a class="btn-primary" href="/apply" target="_blank" role="button">Apply</a>
 			</div>
 			<footer>
-				<img class="center" src="../assets/Logo - Square Clear.png" width="150">
+				<img class="center" src="../assets/Logo-Square_Clear.svg" width="150" alt="big logo">
 				<p class="copyright">Copyright © OE-O Modding | 2020</p>
 			</footer>
 		</section>

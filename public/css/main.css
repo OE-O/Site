@@ -42,7 +42,7 @@ p {
     margin-bottom: 1rem;
 }
 
-h5 {
+h2 {
     font-size: 1.3em;
     line-height: 1.4em;
     margin-bottom: 15px;
@@ -53,6 +53,18 @@ h5 {
 small {
     font-size: 60%;
     font-weight: 400;
+}
+
+.langButton:hover {
+	background-image: url(../assets/language-hovered.svg);
+}
+
+.langButton {
+	background-image: url(../assets/language.svg);
+	background-repeat: no-repeat;
+	background-size: 30px 30px;
+	background-position: center;
+	transition: all 0.3s ease 0s;
 }
 
 /* top button */
@@ -124,7 +136,7 @@ nav {
 }
 
 .nav-links li a:hover {
-    color: #0C585B;
+    color: #006266;
 }
 
 .navButton {
@@ -182,7 +194,7 @@ nav {
 }
 
 .overlay-content a:hover {
-    color: #0C585B;
+    color: #006266;
 }
 
 .overlay .close {
@@ -234,7 +246,7 @@ main::-webkit-scrollbar {
 }
 
 main::-webkit-scrollbar-thumb {
-    background-color: #0C585B;
+    background-color: #006266;
     border-radius: 10px;
 }
 
@@ -282,7 +294,7 @@ main::-webkit-scrollbar-thumb {
 }
 
 .btn-primary {
-    background-color: #0C585B;
+    background-color: #006266;
 }
 
 .btn-secondary {
@@ -319,7 +331,7 @@ main::-webkit-scrollbar-thumb {
 .mods {
     min-height: calc(100vh - 70px);
     text-align: center;
-    background-color: #0C585B;
+    background-color: #006266;
     padding: 0px 50px 150px;
     background-image: url(../assets/wavy-dark-by-nouridio.svg);
     background-position: bottom;
@@ -441,4 +453,4 @@ footer {
     cursor: pointer;
 }
   
-.dropdown-content a:hover {color: #0C585B;}
+.dropdown-content a:hover {color: #006266;}
