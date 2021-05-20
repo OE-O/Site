@@ -1,0 +1,68 @@
+.top {
+	width: 100%;
+	min-height: calc(100vh - 3rem);
+	display: grid;
+	align-items: center;
+	justify-items: start;
+
+	background-color: #2C2F33;
+	background-image: url('/wave-aqua.svg');
+	background-repeat: repeat-x;
+	background-size: clamp(1280px, 100%, 1920px);
+	background-position: bottom;
+	padding-bottom: 12rem
+}
+
+.mods {
+	width: 100%;
+	display: grid;
+	align-items: center;
+
+	background-color: #006266;
+	background-image: url('/wave-greyish.svg');
+	background-repeat: repeat-x;
+	background-size: clamp(1280px, 100%, 1920px);
+	background-position: bottom;
+	padding-bottom: 12rem
+}
+
+.apply {
+	width: 100%;
+	min-height: calc(100vh - 3rem);
+	display: grid;
+	align-items: center;
+	justify-items: end;
+
+	background-color: #2C2F33;
+	background-image: url('/wave-grey.svg');
+	background-repeat: repeat-x;
+	background-size: clamp(1280px, 100%, 1920px);
+	background-position: bottom;
+	padding-bottom: 12rem
+}
+
+.buttons {
+	display: inline-flex;
+	gap: 1.5rem;
+}
+
+@media screen and (max-width: 520px) {
+	.buttons {
+		flex-direction: column;
+		width: fit-content;
+	}
+}
+
+.content {
+	padding: clamp(1rem, 12%, 7rem);
+	display: grid;
+	max-width: 100%;
+}
+
+.primary {
+	background: #006266;
+}
+
+.secondary {
+	background: #23272A;
+}
