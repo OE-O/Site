@@ -4,14 +4,14 @@ import 'firebase/firestore';
 import 'firebase/storage';
 
 const firebaseConfig = {
-	apiKey: "AIzaSyCmxNH2XyMJQrVJBZYdKn83lE0s2xVCL90",
-	authDomain: "oe-o-website.firebaseapp.com",
-	databaseURL: "https://oe-o-website.firebaseio.com",
-	projectId: "oe-o-website",
-	storageBucket: "oe-o-website.appspot.com",
-	messagingSenderId: "867512176790",
-	appId: "1:867512176790:web:15e97ee91286196900b2b7",
-	measurementId: "G-TS346JM866"
+	apiKey: 'AIzaSyCmxNH2XyMJQrVJBZYdKn83lE0s2xVCL90',
+	authDomain: 'oe-o-website.firebaseapp.com',
+	databaseURL: 'https://oe-o-website.firebaseio.com',
+	projectId: 'oe-o-website',
+	storageBucket: 'oe-o-website.appspot.com',
+	messagingSenderId: '867512176790',
+	appId: '1:867512176790:web:15e97ee91286196900b2b7',
+	measurementId: 'G-TS346JM866',
 };
 
 if (!firebase.apps.length) {
@@ -44,17 +44,3 @@ export const STATE_CHANGED = firebase.storage.TaskEvent.STATE_CHANGED;
 // 	const userDoc = (await query.get()).docs[0];
 // 	return userDoc;
 // }
-
-/**`
- * Converts a firestore document to JSON
- * @param  {DocumentSnapshot} doc
- */
-export function postToJSON(doc) {
-	const data = doc.data();
-	return {
-		...data,
-		// Firestore timestamp NOT serializable to JSON. Must convert to milliseconds
-		createdAt: data?.createdAt?.toMillis() || 0,
-		updatedAt: data?.updatedAt?.toMillis() || 0,
-	};
-}
