@@ -4,11 +4,11 @@ import styles from '@styles/ModFeed.module.css';
 
 export default function PostFeed({ mods, admin = false }) {
 	return mods
-		? mods.map((mod) => <ModItem mod={mod} key={mod.id} admin={admin} />)
+		? mods.map((mod) => <ModCard mod={mod} key={mod.id} admin={admin} />)
 		: null;
 }
 
-function ModItem({ mod, admin = false }) {
+function ModCard({ mod, admin = false }) {
 	return (
 		<div className={styles.card}>
 			<div className={styles.title}>
@@ -28,7 +28,7 @@ function ModItem({ mod, admin = false }) {
 			{/* If admin view, show extra controls for user */}
 			{admin && (
 				<>
-					<Link href={`mods/${mod.id}/edit`}>
+					<Link href={`admin/mods/${mod.id}`}>
 						<h3>
 							<button className='btn-blue'>Edit</button>
 						</h3>

@@ -1,0 +1,21 @@
+.content {
+	padding: clamp(1rem, 12%, 7rem);
+
+	display: grid;
+	align-items: center;
+	justify-items: start;
+}
+
+.container {
+	display: grid;
+	align-items: center;
+
+	width: 100%;
+	height: calc(100vh - 3rem);
+
+	background-color: #2c2f33;
+}
+
+.btn {
+	background: #006266;
+}

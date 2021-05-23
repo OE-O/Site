@@ -99,27 +99,27 @@ export default function Navbar() {
 					<ul className={styles.ul_mobile}>
 						<li className={styles.li}>
 							<Link href='/'>
-								<a>Home</a>
+								<a onClick={handleClick}>Home</a>
 							</Link>
 						</li>
 						<li className={styles.li}>
 							<Link href='/discord'>
-								<a>Discord</a>
+								<a onClick={handleClick}>Discord</a>
 							</Link>
 						</li>
 						<li className={styles.li}>
 							<Link href='/github'>
-								<a>GitHub</a>
+								<a onClick={handleClick}>GitHub</a>
 							</Link>
 						</li>
 						<li className={styles.li}>
 							<Link href='/apply'>
-								<a>Apply</a>
+								<a onClick={handleClick}>Apply</a>
 							</Link>
 						</li>
 						<li className={styles.li}>
 							<Link href='/about'>
-								<a>About</a>
+								<a onClick={handleClick}>About</a>
 							</Link>
 						</li>
 					</ul>

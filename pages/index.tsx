@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { firestore, fromMillis, postToJSON } from '@lib/firebase';
+import { firestore } from '@lib/firebase';
 
 import styles from '@styles/Home.module.css';
 import Metatags from '@components/Metatags';

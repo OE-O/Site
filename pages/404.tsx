@@ -19,12 +19,14 @@ function Error(props) {
 				description='That page does not exist'
 			/>
 			<main>
-				<div className={styles.content}>
-					<h1>Oh No...</h1>
-					<p>{message}</p>
-					<Link href='/'>
-						<button className={styles.btn}>Go Home</button>
-					</Link>
+				<div className={styles.container}>
+					<div className={styles.content}>
+						<h1>Oh No...</h1>
+						<p>{message}</p>
+						<Link href='/'>
+							<button className={styles.btn}>Go Home</button>
+						</Link>
+					</div>
 				</div>
 			</main>
 		</>
