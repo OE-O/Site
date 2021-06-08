@@ -20,7 +20,9 @@ if (!firebase.apps.length) {
 
 // Auth exports
 export const auth = firebase.auth();
-export const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
+// export const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
+export const githubAuthProvider =
+	new firebase.auth.GithubAuthProvider().addScope('read:org');
 
 // Firestore exports
 export const firestore = firebase.firestore();

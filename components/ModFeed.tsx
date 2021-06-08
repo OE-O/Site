@@ -20,9 +20,11 @@ function ModCard({ mod, admin = false }) {
 			<ReactMarkdown>{mod.about}</ReactMarkdown>
 
 			<Link href={`/mods/${mod.id}`}>
-				<button style={{ background: '#AD91FF', color: '#23272A' }}>
-					View
-				</button>
+				<a>
+					<button style={{ background: '#AD91FF', color: '#23272A' }}>
+						View
+					</button>
+				</a>
 			</Link>
 
 			{/* If admin view, show extra controls for user */}

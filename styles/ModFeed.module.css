@@ -1,6 +1,6 @@
 .card {
-	background: #23272A;
-	border: 0.4rem solid #AD91FF;
+	background: #23272a;
+	border: 0.4rem solid #ad91ff;
 	box-sizing: border-box;
 	border-radius: 30px;
 	padding: 0.8rem;
@@ -16,7 +16,7 @@
 	line-height: 90%;
 	margin-right: 4rem;
 
-	color: #C4C4C4;
+	color: #c4c4c4;
 }
 
 .title {

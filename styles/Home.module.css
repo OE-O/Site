@@ -5,12 +5,12 @@
 	align-items: center;
 	justify-items: start;
 
-	background-color: #2C2F33;
+	background-color: #2c2f33;
 	background-image: url('/wave-aqua.svg');
 	background-repeat: repeat-x;
 	background-size: clamp(1280px, 100%, 1920px);
 	background-position: bottom;
-	padding-bottom: 12rem
+	padding-bottom: 12rem;
 }
 
 .mods {
@@ -23,7 +23,7 @@
 	background-repeat: repeat-x;
 	background-size: clamp(1280px, 100%, 1920px);
 	background-position: bottom;
-	padding-bottom: 12rem
+	padding-bottom: 12rem;
 }
 
 .apply {
@@ -33,12 +33,12 @@
 	align-items: center;
 	justify-items: end;
 
-	background-color: #2C2F33;
+	background-color: #2c2f33;
 	background-image: url('/wave-grey.svg');
 	background-repeat: repeat-x;
 	background-size: clamp(1280px, 100%, 1920px);
 	background-position: bottom;
-	padding-bottom: 12rem
+	padding-bottom: 12rem;
 }
 
 .buttons {
@@ -64,5 +64,5 @@
 }
 
 .secondary {
-	background: #23272A;
+	background: #23272a;
 }

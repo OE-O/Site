@@ -21,10 +21,14 @@ export default function Home({ mods }) {
 						</p>
 						<div className={styles.buttons}>
 							<Link href='/discord'>
-								<button className={styles.primary}>Discord</button>
+								<a>
+									<button className={styles.primary}>Discord</button>
+								</a>
 							</Link>
 							<Link href='/mods'>
-								<button className={styles.secondary}>Explore</button>
+								<a>
+									<button className={styles.secondary}>Explore</button>
+								</a>
 							</Link>
 						</div>
 					</div>
