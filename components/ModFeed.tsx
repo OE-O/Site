@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
-import styles from '@styles/ModFeed.module.css';
+
+import styles from '@styles/ModFeed.module.scss';
 
 export default function PostFeed({ mods, admin = false }) {
 	return mods

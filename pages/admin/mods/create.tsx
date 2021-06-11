@@ -1,5 +1,3 @@
-function CreateMod(props) {
-	return <p>No</p>;
+export default function CreateMod(props) {
+	return null;
 }
-
-export default CreateMod;

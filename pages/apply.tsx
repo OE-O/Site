@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
 import Metatags from '@components/Metatags';
-import styles from '@styles/404.module.css';
+import styles from '@styles/404.module.scss';
 
-function Apply(props) {
+export default function Apply(props) {
 	return (
 		<>
 			<Metatags
@@ -28,5 +28,3 @@ function Apply(props) {
 // function Form() {
 // 	return <p>Hi</p>
 // }
-
-export default Apply;

@@ -1,10 +1,8 @@
 import { useRouter } from 'next/router';
 
-function Mod(props) {
+export default function Mod(props) {
 	const router = useRouter();
 	const { id } = router.query;
 
-	return <p>{id}</p>;
+	return null;
 }
-
-export default Mod;

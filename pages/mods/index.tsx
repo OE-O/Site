@@ -1,8 +1,8 @@
+import { useState } from 'react';
+
+import { firestore } from '@lib/firebase';
 import ModFeed from '@components/ModFeed';
 import Metatags from '@components/Metatags';
-import { firestore } from '@lib/firebase';
-
-import { useState } from 'react';
 
 // mod query limit
 const LIMIT = 5;
@@ -21,7 +21,7 @@ export async function getServerSideProps(context) {
 	};
 }
 
-function Mods(props) {
+export default function Mods(props) {
 	const [mods, setmods] = useState(props.mods);
 	const [loading, setLoading] = useState(false);
 	const [modsEnd, setmodsEnd] = useState(false);
@@ -69,5 +69,3 @@ function Mods(props) {
 		</main>
 	);
 }
-
-export default Mods;

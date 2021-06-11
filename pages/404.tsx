@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
 import Metatags from '@components/Metatags';
-import styles from '@styles/404.module.css';
+import styles from '@styles/404.module.scss';
 
-function Error(props) {
+export default function Error(props) {
 	const messages = [
 		'We hit a roadblock!',
 		"There's nothing here...",
@@ -32,5 +32,3 @@ function Error(props) {
 		</>
 	);
 }
-
-export default Error;

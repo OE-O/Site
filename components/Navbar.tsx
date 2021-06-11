@@ -1,8 +1,9 @@
 import Link from 'next/link';
-import styles from '@styles/Navbar.module.css';
 import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
+
 import { deviceSize } from '@lib/responsive';
+import styles from '@styles/Navbar.module.scss';
 
 // Top navbar
 export default function Navbar() {

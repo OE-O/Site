@@ -1,10 +1,24 @@
 import Link from 'next/link';
-import { firestore } from '@lib/firebase';
 
-import styles from '@styles/Home.module.css';
+import { firestore } from '@lib/firebase';
 import Metatags from '@components/Metatags';
 import Footer from '@components/Footer';
 import ModFeed from '@components/ModFeed';
+import styles from '@styles/Home.module.scss';
+
+export async function getServerSideProps(context) {
+	const postsQuery = firestore
+		.collection('mods')
+		.where('published', '==', true)
+		.orderBy('views', 'desc')
+		.limit(3);
+
+	const mods = (await postsQuery.get()).docs.map((doc) => doc.data());
+
+	return {
+		props: { mods }, // will be passed to the page component as props
+	};
+}
 
 export default function Home({ mods }) {
 	return (
@@ -61,18 +75,4 @@ export default function Home({ mods }) {
 			<Footer />
 		</>
 	);
-}
-
-export async function getServerSideProps(context) {
-	const postsQuery = firestore
-		.collection('mods')
-		.where('published', '==', true)
-		.orderBy('views', 'desc')
-		.limit(3);
-
-	const mods = (await postsQuery.get()).docs.map((doc) => doc.data());
-
-	return {
-		props: { mods }, // will be passed to the page component as props
-	};
 }

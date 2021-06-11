@@ -4,14 +4,14 @@ import 'firebase/firestore';
 import 'firebase/storage';
 
 const firebaseConfig = {
-	apiKey: 'AIzaSyCmxNH2XyMJQrVJBZYdKn83lE0s2xVCL90',
-	authDomain: 'oe-o-website.firebaseapp.com',
-	databaseURL: 'https://oe-o-website.firebaseio.com',
-	projectId: 'oe-o-website',
-	storageBucket: 'oe-o-website.appspot.com',
-	messagingSenderId: '867512176790',
-	appId: '1:867512176790:web:15e97ee91286196900b2b7',
-	measurementId: 'G-TS346JM866',
+	apiKey: process.env.NEXT_PUBLIC_API_KEY,
+	authDomain: process.env.NEXT_PUBLIC_AUTH_DOMAIN,
+	databaseURL: process.env.NEXT_PUBLIC_DATABASE_URL,
+	projectId: process.env.NEXT_PUBLIC_PROJECT_ID,
+	storageBucket: process.env.NEXT_PUBLIC_STORAGE_BUCKET,
+	messagingSenderId: process.env.NEXT_PUBLIC_MESSAGING_SENDER_ID,
+	appId: process.env.NEXT_PUBLIC_APP_ID,
+	measurementId: process.env.NEXT_PUBLIC_MEASUREMENT_ID,
 };
 
 if (!firebase.apps.length) {
