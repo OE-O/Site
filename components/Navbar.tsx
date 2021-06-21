@@ -2,8 +2,8 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 
-import { deviceSize } from '@lib/responsive';
-import styles from '@styles/Navbar.module.scss';
+import { deviceSize } from 'lib/responsive';
+import styles from 'styles/Navbar.module.scss';
 
 // Top navbar
 export default function Navbar() {
@@ -17,7 +17,12 @@ export default function Navbar() {
 	return (
 		<>
 			<header className={styles.header}>
-				<img src='/logo.png' className={styles.img} />
+				<img
+					src='/logo.png'
+					className={styles.img}
+					alt='OE-O'
+					draggable='false'
+				/>
 				{isMobile && (
 					<>
 						{!active && (

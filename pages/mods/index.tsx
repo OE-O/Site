@@ -1,8 +1,9 @@
 import { useState } from 'react';
 
-import { firestore } from '@lib/firebase';
-import ModFeed from '@components/ModFeed';
-import Metatags from '@components/Metatags';
+import { firestore } from 'lib/firebase';
+import ModFeed from 'components/ModFeed';
+import Metatags from 'components/Metatags';
+import Loader from 'components/Loader';
 
 // mod query limit
 const LIMIT = 5;
@@ -63,7 +64,11 @@ export default function Mods(props) {
 
 			{!loading && !modsEnd && <button onClick={getMoremods}>Load more</button>}
 
-			{/* <Loader show={loading} /> */}
+			{loading && (
+				<button>
+					<Loader />
+				</button>
+			)}
 
 			{modsEnd && 'No more mods to see 😢'}
 		</main>

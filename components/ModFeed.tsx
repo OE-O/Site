@@ -22,9 +22,7 @@ function ModCard({ mod, admin = false }) {
 
 			<Link href={`/mods/${mod.id}`}>
 				<a>
-					<button style={{ background: '#AD91FF', color: '#23272A' }}>
-						View
-					</button>
+					<button className={styles.btn}>View</button>
 				</a>
 			</Link>
 
@@ -33,14 +31,14 @@ function ModCard({ mod, admin = false }) {
 				<>
 					<Link href={`admin/mods/${mod.id}`}>
 						<h3>
-							<button className='btn-blue'>Edit</button>
+							<button className={styles.edit}>Edit</button>
 						</h3>
 					</Link>
 
 					{mod.published ? (
-						<p className='text-success'>Live</p>
+						<p className={styles.success}>Live</p>
 					) : (
-						<p className='text-danger'>Unpublished</p>
+						<p className={styles.danger}>Unpublished</p>
 					)}
 				</>
 			)}

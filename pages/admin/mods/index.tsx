@@ -1,19 +1,19 @@
 import { useContext, useState } from 'react';
 import Link from 'next/link';
 
-import { auth, firestore, githubAuthProvider } from '@lib/firebase';
-import { UserContext } from '@lib/context';
-import ModFeed from '@components/ModFeed';
-import Metatags from '@components/Metatags';
-import styles from '@styles/Admin.module.scss';
-import _404 from '@styles/404.module.scss';
+import { auth, firestore, githubAuthProvider } from 'lib/firebase';
+import { UserContext } from 'lib/context';
+import ModFeed from 'components/ModFeed';
+import Metatags from 'components/Metatags';
+import Loader from 'components/Loader';
+import styles from 'styles/Admin.module.scss';
+import _404 from 'styles/404.module.scss';
 
 const LIMIT = 5;
 
 export async function getServerSideProps(context) {
 	const modsQuery = firestore
 		.collection('mods')
-		.where('published', '==', true)
 		.orderBy('views', 'desc')
 		.limit(LIMIT);
 
@@ -31,7 +31,7 @@ export default function Mods({ mods }) {
 	// 2. user signed in, but missing permissions <AccessDenied />
 	// 3. user signed in, has permissions <ModsPage />
 	return (
-		<main>
+		<main className={styles.container}>
 			<Metatags
 				title='OE-O Modding | Admin'
 				description='Admin dashboard for managing the website'
@@ -81,7 +81,6 @@ function ModsPage(props) {
 
 		const query = firestore
 			.collection('mods')
-			.where('published', '==', true)
 			.orderBy('views', 'desc')
 			.startAfter(last)
 			.limit(LIMIT);
@@ -102,9 +101,11 @@ function ModsPage(props) {
 
 			{!loading && !modsEnd && <button onClick={getMoremods}>Load more</button>}
 
-			{/* <Loader show={loading} /> */}
-
-			{modsEnd && 'No more mods to see 😢'}
+			{loading && (
+				<button>
+					<Loader />
+				</button>
+			)}
 		</>
 	);
 }
@@ -117,17 +118,15 @@ function AccessDenied() {
 				title='OE-O Modding | Admin'
 				description='Please log in to see this page'
 			/>
-			<main>
-				<div className={_404.container}>
-					<div className={_404.content}>
-						<h1>Sorry...</h1>
-						<p>It looks like your aren't allowed to access that page</p>
-						<Link href='/'>
-							<button className={_404.btn}>Go Home</button>
-						</Link>
-					</div>
+			<div className={_404.container}>
+				<div className={_404.content}>
+					<h1>Sorry...</h1>
+					<p>It looks like your aren't allowed to access that page</p>
+					<Link href='/'>
+						<button className={_404.btn}>Go Home</button>
+					</Link>
 				</div>
-			</main>
+			</div>
 		</>
 	);
 }

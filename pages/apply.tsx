@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
-import Metatags from '@components/Metatags';
-import styles from '@styles/404.module.scss';
+import Metatags from 'components/Metatags';
+import styles from 'styles/404.module.scss';
 
 export default function Apply(props) {
 	return (

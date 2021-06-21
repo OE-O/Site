@@ -1,10 +1,10 @@
 import Link from 'next/link';
 
-import { firestore } from '@lib/firebase';
-import Metatags from '@components/Metatags';
-import Footer from '@components/Footer';
-import ModFeed from '@components/ModFeed';
-import styles from '@styles/Home.module.scss';
+import { firestore } from 'lib/firebase';
+import Metatags from 'components/Metatags';
+import Footer from 'components/Footer';
+import ModFeed from 'components/ModFeed';
+import styles from 'styles/Home.module.scss';
 
 export async function getServerSideProps(context) {
 	const postsQuery = firestore

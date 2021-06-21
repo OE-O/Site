@@ -1,0 +1,40 @@
+@keyframes loader {
+	0%,
+	100% {
+	}
+	50% {
+		height: 1em;
+	}
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	height: 1em;
+	width: 3em;
+}
+
+.loader {
+	height: 0.6em;
+	width: 0.6em;
+	background-color: #ffffff;
+	border-radius: 0.3em;
+	display: inline-block;
+}
+
+.one {
+	animation: loader 800ms ease infinite normal none;
+}
+
+.two {
+	animation: loader 800ms ease 200ms infinite normal none;
+}
+
+.three {
+	animation: loader 800ms ease 400ms infinite normal none;
+}
+
+.four {
+	animation: loader 800ms ease 600ms infinite normal none;
+}

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
-import Metatags from '@components/Metatags';
-import styles from '@styles/404.module.scss';
+import Metatags from 'components/Metatags';
+import styles from 'styles/404.module.scss';
 
 export default function Error(props) {
 	const messages = [
@@ -22,7 +22,7 @@ export default function Error(props) {
 				<div className={styles.container}>
 					<div className={styles.content}>
 						<h1>Oh No...</h1>
-						<p>{message}</p>
+						<p suppressHydrationWarning={true}>{message}</p>
 						<Link href='/'>
 							<button className={styles.btn}>Go Home</button>
 						</Link>
