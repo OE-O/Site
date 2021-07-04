@@ -1,11 +1,11 @@
 import { useEffect, useCallback, useContext } from 'react';
 import Link from 'next/link';
 
-import { auth, firestore, githubAuthProvider } from '@lib/firebase';
-import { UserContext } from '@lib/context';
-import Metatags from '@components/Metatags';
-import styles from '@styles/Admin.module.scss';
-import _404 from '@styles/404.module.scss';
+import { auth, firestore, githubAuthProvider } from 'lib/firebase';
+import { UserContext } from 'lib/context';
+import Metatags from 'components/Metatags';
+import styles from 'styles/Admin.module.scss';
+import _404 from 'styles/404.module.scss';
 
 export default function Admin(props) {
 	const { user, username, admin } = useContext(UserContext);
